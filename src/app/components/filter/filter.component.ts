@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { ProductServiceService } from 'src/app/services/product-service.service';
+import { ProductServiceService } from '../../services/product-service.service';
 
 @Component({
   selector: 'app-filter',
