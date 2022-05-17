@@ -12,7 +12,10 @@ export class HeaderComponent implements OnInit {
   cartItems:number=0;
 
   constructor(private productService:ProductServiceService) { }
-
+  navbarOpen = false;
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
   ngOnInit(): void {
 
     this.productService.addtoCartemmiter.subscribe((myList:Product[]) =>
